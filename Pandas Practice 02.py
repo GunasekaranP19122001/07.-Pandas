@@ -147,8 +147,8 @@ reviews[italian_wines]
 # In[12]:
 
 
-mask1 = reviews["points"] <= 95
-mask2 = reviews["country"] == "Zealand"
+mask1 = reviews["points"] >= 95
+mask2 = reviews["country"] == "New Zealand"
 mask3 = reviews["country"] == "Australia"
 reviews[mask1 & (mask2 | mask3)]
 
